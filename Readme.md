@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Вета Иванченко](https://up.htmlacademy.ru/htmlcss/23/user/151110).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Григорьева](https://htmlacademy.ru/profile/arctic_pie).
 
 ---
 
