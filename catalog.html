@@ -7,7 +7,11 @@
   <body>
 <header class="header-main">
 <p class="header-logo"><a href="index.html"><img src="img/logo-header.svg" alt="Логотип «Техномарта»" width="111" height="18"></a></p>
-<!-- Здесь будет форма поиска -->
+<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
+<label for="search-field" class="visually-hidden">Поиск</label>
+<input type="search" name="search" placeholder="Поиск:" id="search-field">
+<button type="submit" class="visually-hidden">Искать на сайте</button>
+</form>
 <a class="header-bookmarks" href="#">Закладки: 0</a>
 <a class="header-cart active" href="#">Корзина: 10</a>
 <a class="header-order" href="#">Оформить заказ</a>
@@ -46,8 +50,49 @@
 </ul>
 <h1>Перфораторы</h1>
 <section class="filters">
-<h2 class="visually-hidden">Фильтры</h2>
-<!-- Здесь будут формы -->
+<h2 class="visually-hidden">Фильтры каталога</h2>
+<form action="https://echo.htmlacademy.ru" method="get" class="filter">
+<!-- Здесь будет фильтр по цене -->
+<fieldset class="filter-brands">
+	<legend>Производители:</legend>
+	<ul>
+		<li class="filter-option">
+			<input type="checkbox" name="bosch" id="brand-bosch" checked>
+			<label for="brand-bosch">Bosch</label>
+		</li>
+				<li class="filter-option">
+			<input type="checkbox" name="interskol" id="brand-interskol">
+			<label for="brand-interskol">Интерскол</label>
+		</li>
+				<li class="filter-option">
+			<input type="checkbox" name="makita" id="brand-makita" checked>
+			<label for="brand-makita">Makita</label>
+		</li>
+				<li class="filter-option">
+			<input type="checkbox" name="dewalt" id="brand-dewalt">
+			<label for="brand-dewalt">Dewalt</label>
+		</li>
+				<li class="filter-option">
+			<input type="checkbox" name="hitachi" id="brand-hitachi">
+			<label for="brand-hitachi">Hitachi</label>
+		</li>
+	</ul>
+</fieldset>
+<fieldset class="filter-charge">
+	<legend>Питание:</legend>
+	<ul>
+	<li class="filter-option">
+		<input type="radio" name="charge" id="charge-battery" value="battery" checked>
+		<label for="charge-battery">Аккумуляторные</label>
+	</li>
+		<li class="filter-option">
+		<input type="radio" name="charge" id="charge-electric" value="electric">
+		<label for="charge-electric">Сетевые</label>
+	</li>
+	</ul>
+</fieldset>
+<button type="submit" class="filter-button">Показать</button>
+</form>
 </section>
 <section class="catalog">
 	<!-- Здесь будет форма -->
@@ -191,6 +236,14 @@
 	</ul>
 </section>
 <!-- Здесь будут блоки, выделенные красным -->
+<section class="modal modal-cart">
+	<h2>Товар добавлен в корзину!</h2>
+	<div class="modal-cart-buttons">
+		<button type="button" class="modal-cart-order">Оформить заказ</button>
+		<button type="button" class="modal-cart-dismiss">Продолжить покупки</button>
+	</div>
+	<button class="modal-close" type="button">Закрыть</button>
+</section>
 </main>
 <footer class="footer-main">
 <p class="footer-logo"><a href="index.html"><img src="img/logo-footer.svg" alt="Логотип «Техномарта" width="138" height="23"></a></p>	

@@ -1,96 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
-<header class="header-main">
-<p class="header-logo"><img src="img/logo-header.svg" alt="Логотип «Техномарта»" width="111" height="18"></p>
-<!-- Здесь будет форма поиска -->
-<a class="header-bookmarks" href="#">Закладки: 0</a>
-<a class="header-cart active" href="#">Корзина: 0</a>
-<a class="header-order" href="#">Оформить заказ</a>
-<p class="header-description">Интернет-магазин<br>
-строительных материалов<br>
-и инструментов для ремонта</p>
-<div class="header-contacts">
-<a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-<p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
-<div class="user-navigation">
-<ul class="user-navigation-unauthorized">
-<li><a href="#">Войти</a></li>
-<li><a href="#">Регистрация</a></li>
-</ul></div>
-<nav class="main-menu">
-<ul>
-<li>Главная</li>
-<li><a href="#">Компания</a></li>
-<li><a href="#">Каталог</a></li>
-<li><a href="#">Новости</a></li>
-<li><a href="#">Спецпредложения</a></li>
-<li><a href="#">Доставка</a></li>
-<li><a href="#">Контакты</a></li>
-</ul>
-</nav>
-</header>
-<main class="container">
-<h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
-	<!-- Здесь будут блоки, выделенные красным -->
-	<section class="main-about">
-		<h2>Компания «Техномарт»</h2>
-<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-Техномарт работает со многими транспортными компаниями: </p>
-<ul class="companies-list"><li>Деловые линии</li>
-<li>Автотрейдинг</li>
-<li>ЖелДорЭкспедиция</li></ul>
-<a href="#" class="button-more">Подробнее о компании</a>
-	</section>
-	<section class="main-contacts">
-		<h2>Контакты</h2>
-		<p>Вы можете забрать товар сами, <br>
-заехав в наш офис:</p>
-<p class="contacts-map"><a href="https://goo.gl/maps/KQanHvccPNP2" target="_blank"><img src="img/main-map.jpg" alt="Карта проезда" width="300" height="158"></a></p>
-<button class="button-contacts">Заблудились? Напишите нам!</button>
-	</section>
-</main>
-<footer class="footer-main">
-<p class="footer-logo"><img src="img/logo-footer.svg" alt="Логотип «Техномарта" width="138" height="23"></p>	
-<p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-+7 (812) 555-05-55
-</p>
-<ul class="footer-menu-main">
-<li><a href="#">Компания</a></li>
-<li><a href="#">Новости</a></li>
-<li><a href="#">Каталог</a></li>
-<li><a href="#">Доставка</a></li>
-<li><a href="#">Контакты</a></li>
-</ul>
-<ul class="footer-menu-extra">
-<li><a href="#">Материалы</a></li>
-<li><a href="#">Техника</a></li>
-<li><a href="#">Инструмент</a></li>
-<li><a href="#">Спецпредложения</a></li>
-</ul>
-<p class="footer-copyright">
-© 2010–2017 Компания «Техномарт»<br>
-Все права защищены
-</p>
-<div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
-<p class="footer-feedback">
-Обратная связь:<br>
-<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-<p class="footer-developer">
-Разработано —<br>
-<a href="https://htmlacademy.ru/">htmlacademy.ru</a>
-</p>
-</footer>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+</head>
+<body>
+  <header class="header-main">
+    <p class="header-logo"><img src="img/logo-header.svg" alt="Логотип «Техномарта»" width="111" height="18"></p>
+    <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
+      <label for="search-field" class="visually-hidden">Поиск</label>
+      <input type="search" name="search" placeholder="Поиск:" id="search-field">
+      <button type="submit" class="visually-hidden">Искать на сайте</button>
+    </form>
+    <a class="header-bookmarks" href="#">Закладки: 0</a>
+    <a class="header-cart active" href="#">Корзина: 0</a>
+    <a class="header-order" href="#">Оформить заказ</a>
+    <p class="header-description">Интернет-магазин<br>
+      строительных материалов<br>
+      и инструментов для ремонта</p>
+      <div class="header-contacts">
+        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
+        <div class="user-navigation">
+          <ul class="user-navigation-unauthorized">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Регистрация</a></li>
+          </ul></div>
+          <nav class="main-menu">
+            <ul>
+              <li>Главная</li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main class="container">
+          <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
+          <!-- Здесь будут блоки, выделенные красным -->
+          <section class="main-about">
+            <h2>Компания «Техномарт»</h2>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+              Техномарт работает со многими транспортными компаниями: </p>
+              <ul class="companies-list"><li>Деловые линии</li>
+                <li>Автотрейдинг</li>
+                <li>ЖелДорЭкспедиция</li></ul>
+                <a href="#" class="button-more">Подробнее о компании</a>
+              </section>
+              <section class="main-contacts">
+                <h2>Контакты</h2>
+                <p>Вы можете забрать товар сами, <br>
+                  заехав в наш офис:</p>
+                  <p class="contacts-map"><a href="https://goo.gl/maps/KQanHvccPNP2" target="_blank"><img src="img/main-map.jpg" alt="Карта проезда" width="300" height="158"></a></p>
+                  <button class="button-contacts">Заблудились? Напишите нам!</button>
+                </section>
+                <section class="modal modal-map">
+                  <h2 class="visually-hidden">
+                    Как до нас добраться
+                  </h2>
+                  <p>
+                    <img src="img/map-large.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                  </p>
+                  <button class="modal-close" type="button">
+                    Закрыть
+                  </button>
+                </section>
+                <section class="modal modal-feedback">
+                  <h2 class="visually-hidden">Обратная связь</h2>
+                  <form action="https://echo.htmlacademy.ru" method="post" class="feedback-form">
+                    <label for="name-field">Ваше имя:</label>
+                    <input type="text" name="name" id="name-field" placeholder="Имя Фамилия"> 
+                    <label for="email-field">Ваш e-mail:</label>
+                    <input type="email" name="email" id="email-field" placeholder="email@example.com"> 
+                    <label for="letter-field">Текст письма:</label> 
+                    <textarea name="letter" id="letter-field" placeholder="В свободной форме"></textarea>     
+                    <button type="submit" class="button-submit">Отправить</button>  
+                  </form>
+                  <button class="modal-close" type="button">
+                    Закрыть
+                  </button>
+                </section>
+              </main>
+              <footer class="footer-main">
+                <p class="footer-logo"><img src="img/logo-footer.svg" alt="Логотип «Техномарта" width="138" height="23"></p>	
+                <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                  +7 (812) 555-05-55
+                </p>
+                <ul class="footer-menu-main">
+                  <li><a href="#">Компания</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Каталог</a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="footer-menu-extra">
+                  <li><a href="#">Материалы</a></li>
+                  <li><a href="#">Техника</a></li>
+                  <li><a href="#">Инструмент</a></li>
+                  <li><a href="#">Спецпредложения</a></li>
+                </ul>
+                <p class="footer-copyright">
+                  © 2010–2017 Компания «Техномарт»<br>
+                  Все права защищены
+                </p>
+                <div class="footer-social">
+                  <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                  </ul>
+                </div>
+                <p class="footer-feedback">
+                  Обратная связь:<br>
+                  <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+                  <p class="footer-developer">
+                    Разработано —<br>
+                    <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+                  </p>
+                </footer>
+              </body>
+              </html>
