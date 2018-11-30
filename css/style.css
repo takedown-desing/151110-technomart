@@ -12,6 +12,18 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+  	clip: rect(0 0 0 0);
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+}
+
+.modal {
+	display: none;
+}
+
 .header-main {
 	background-color: #f3f7f9;
 }
@@ -34,6 +46,20 @@ a {
 
 .header-order {
 	background-color: #63a63e;
+}
+
+.header-cart.active {
+	background-color: #ee3643;
+}
+
+.header-cart.active:focus,
+.header-cart.active:hover {
+	background-color: #ca2c37;
+}
+
+.header-cart.active:active {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: #ba2732;
 }
 
 .header-bookmarks:focus,
@@ -83,19 +109,52 @@ a {
 	color: #32425c;
 }
 
-.header-main .user-button {
+.user-button {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 	background-color: #ffffff;
 }
 
-.header-main .user-button:focus,
-.header-main .user-button:hover {
+.user-navigation ul {
+	list-style-type: none;
+}
+
+.personal-buttons {
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline; 
+}
+
+.personal-buttons a {
+	color: inherit;
+}
+
+.personal-buttons a:focus,
+.personal-buttons a:hover {
 	color: #ee3643;
 }
 
-.header-main .user-button:active {
+.personal-buttons a:active {
+	color: rgba(50, 66, 92, 0.3);
+}
+
+.unauthorized .user-button:focus,
+.unauthorized .user-button:hover {
+	color: #ee3643;
+}
+
+.unauthorized .user-button:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.authorized .user-button:focus,
+.authorized .user-button:hover {
+	color: #000000;
+}
+
+.authorized .user-button:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -122,6 +181,51 @@ a {
 .main-menu a:active {
 	color: rgba(255, 255, 255, 0.5);
 	background-color: #1d2739;
+}
+
+.main-about h2,
+.main-contacts h2 {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.main-about p,
+.main-contacts p {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+}
+
+.companies-list li {
+	line-height: 20px;
+}
+
+.button-more, 
+.button-contacts {
+	font-size: 14px;
+	line-height: 17,5px;
+	color: #ffffff;
+	background-color: #ee3643;
+	text-transform: uppercase;
+}
+
+.breadcrumbs {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.breadcrumbs a {
+	color: inherit;
+}
+
+.container h1 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;	
+	background-color: #f2f6f8;
+	text-transform: uppercase;
 }
 
 .footer-main {
