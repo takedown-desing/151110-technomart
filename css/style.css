@@ -10,6 +10,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 .visually-hidden {
@@ -24,6 +25,8 @@ a {
 	display: none;
 }
 
+/* Шапка */
+
 .header-main {
 	background-color: #f3f7f9;
 }
@@ -33,10 +36,6 @@ a {
 	line-height: 18px;
 	color: #ffffff;
 	background-color: #293449;
-}
-
-.header-top a {
-	color: inherit;
 }
 
 .header-main .search-input {
@@ -127,10 +126,6 @@ a {
 	text-decoration: underline; 
 }
 
-.personal-buttons a {
-	color: inherit;
-}
-
 .personal-buttons a:focus,
 .personal-buttons a:hover {
 	color: #ee3643;
@@ -158,6 +153,8 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+/* Главное меню */
+
 .header-main .main-menu {
 	font-size: 17px;
 	line-height: 17px;
@@ -167,10 +164,6 @@ a {
 
 .main-menu ul {
 	list-style-type: none;
-}
-
-.main-menu a {
-	color: inherit;
 }
 
 .main-menu a:focus,
@@ -195,6 +188,8 @@ a {
 	font-size: 13px;
 }
 
+/* Контент главной страницы */
+
 .companies-list li {
 	line-height: 20px;
 }
@@ -208,16 +203,14 @@ a {
 	text-transform: uppercase;
 }
 
+/* Контент внутренних страниц */
+
 .breadcrumbs {
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
 	list-style-type: none;
-}
-
-.breadcrumbs a {
-	color: inherit;
 }
 
 .container h1 {
@@ -228,6 +221,95 @@ a {
 	text-transform: uppercase;
 }
 
+.filters {
+	font-family: 'PT Sans', Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.filters legend {
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.filters label {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.filters .filter-button {
+	font-family: inherit;
+	font-size: 13px;
+	line-height: 18px;
+	background-color: #ffffff;
+	text-transform: inherit;
+}
+
+.catalog-item {
+	list-style-type: none;
+}
+
+.catalog-content-container {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+}
+
+.catalog-content-container h3 {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.catalog-item-price {
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.old-price {
+	color: #999999;
+	text-decoration: line-through;
+}
+
+.new-price {
+	color: #ffffff;
+	background-color: #ee3341;
+}
+
+.catalog-item-buttons button {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.catalog-item-order {
+	color: #ffffff;
+	background-color: #63a63e;
+}
+
+.catalog-item-order:focus,
+.catalog-item-order:hover {
+	background-color: #5fbb2d;
+}
+
+.catalog-item-order:active {
+	background-color: #518534;
+}
+
+.catalog-item-bookmark {
+	color: #32425c;
+	background-color: #ffffff;
+}
+
+.catalog-item-bookmark:focus,
+.catalog-item-bookmark:hover {
+	/* Стили рамки при наведении */
+}
+
+.catalog-item-bookmark:active {
+	color: rgba(50, 66, 92, 0.3);
+}
+
+/* Футер */
+
 .footer-main {
 	color: #f3f7f9;
 	background-color: #32425c;
@@ -236,11 +318,6 @@ a {
 .footer-menu-main,
 .footer-menu-extra {
 	list-style-type: none;
-}
-
-.footer-menu-main a,
-.footer-menu-extra a {
-	color: inherit;
 }
 
 .footer-menu-extra {
