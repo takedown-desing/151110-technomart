@@ -1,64 +1,64 @@
 body {
-	margin: 0;
-	font-family: 'Cuprum', Arial, sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 400;
-	color: #000000;
-	background-color: #ffffff;
+  margin: 0;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .visually-hidden {
-	position: absolute;
-  	clip: rect(0 0 0 0);
-  	width: 1px;
-  	height: 1px;
-  	margin: -1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .modal {
-	display: none;
+  display: none;
 }
 
 /* Шапка */
 
 .header-main {
-	background-color: #f3f7f9;
+  background-color: #f3f7f9;
 }
 
 .header-top {
-	font-size: 17px;
-	line-height: 18px;
-	color: #ffffff;
-	background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
 }
 
 .header-main .search-input {
-	color: #ffffff;
-	background-color: #293449;
+  color: #ffffff;
+  background-color: #293449;
 }
 
 .header-order {
-	background-color: #63a63e;
+  background-color: #63a63e;
 }
 
 .header-cart.active {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 .header-cart.active:focus,
 .header-cart.active:hover {
-	background-color: #ca2c37;
+  background-color: #ca2c37;
 }
 
 .header-cart.active:active {
-	color: rgba(255, 255, 255, 0.6);
-	background-color: #ba2732;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #ba2732;
 }
 
 .header-bookmarks:focus,
@@ -67,313 +67,313 @@ a {
 .header-cart:hover,
 .header-main .search-input:focus,
 .header-main .search-input:hover {
-	background-color: #212a3a;
+  background-color: #212a3a;
 }
 
-.header-order:focus, 
+.header-order:focus,
 .header-order:hover {
-	background-color: #5fbb2d;
+  background-color: #5fbb2d;
 }
 
-.header-bookmarks:active, 
+.header-bookmarks:active,
 .header-cart:active {
-	color: rgba(255, 255, 255, 0.6);
-	background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
 }
 
 .header-order:active {
-	color: rgba(255, 255, 255, 0.5);
-	background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
 }
 
 .header-description {
-	font-size: 16px;
-	font-style: italic;
-	line-height: 23px;
-	color: #ee3643;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .header-contacts {
-	text-align: center;
+  text-align: center;
 }
 
 .header-phone {
-	font-size: 21px;
-	line-height: 21px;
-	color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
 }
 
 .header-address {
-	font-size: 14px;
-	color: #32425c;
+  font-size: 14px;
+  color: #32425c;
 }
 
 .user-button {
-	font-size: 21px;
-	line-height: 21px;
-	color: #000000;
-	background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .user-navigation ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .personal-buttons {
-	font-size: 16px;
-	line-height: 18px;
-	color: #32425c;
-	text-decoration: underline; 
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
 }
 
 .personal-buttons a:focus,
 .personal-buttons a:hover {
-	color: #ee3643;
+  color: #ee3643;
 }
 
 .personal-buttons a:active {
-	color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .unauthorized .user-button:focus,
 .unauthorized .user-button:hover {
-	color: #ee3643;
+  color: #ee3643;
 }
 
 .unauthorized .user-button:active {
-	color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .authorized .user-button:focus,
 .authorized .user-button:hover {
-	color: #000000;
+  color: #000000;
 }
 
 .authorized .user-button:active {
-	color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Главное меню */
 
 .header-main .main-menu {
-	font-size: 17px;
-	line-height: 17px;
-	color: #ffffff;
-	background-color: #32425c;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #32425c;
 }
 
 .main-menu ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .main-menu a:focus,
 .main-menu a:hover {
-	background-color: #293449;
+  background-color: #293449;
 }
 
 .main-menu a:active {
-	color: rgba(255, 255, 255, 0.5);
-	background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
 }
 
 .main-about h2,
 .main-contacts h2 {
-	font-size: 30px;
-	line-height: 30px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .main-about p,
 .main-contacts p {
-	font-family: 'PT Sans', Arial, sans-serif;
-	font-size: 13px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
 }
 
 /* Контент главной страницы */
 
 .companies-list li {
-	line-height: 20px;
+  line-height: 20px;
 }
 
-.button-more, 
+.button-more,
 .button-contacts {
-	font-size: 14px;
-	line-height: 17,5px;
-	color: #ffffff;
-	background-color: #ee3643;
-	text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17, 5px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
 }
 
 /* Контент внутренних страниц */
 
 .breadcrumbs {
-	font-family: 'PT Sans', Arial, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	text-transform: uppercase;
-	list-style-type: none;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style-type: none;
 }
 
 .container h1 {
-	font-size: 30px;
-	line-height: 30px;
-	color: #32425c;	
-	background-color: #f2f6f8;
-	text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+  text-transform: uppercase;
 }
 
 .filters {
-	font-family: 'PT Sans', Arial, sans-serif;
-	text-transform: uppercase;
+  font-family: 'PT Sans', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .filters legend {
-	font-size: 17px;
-	font-weight: 700;
-	line-height: 30px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .filters label {
-	font-size: 15px;
-	line-height: 20px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .filters .filter-button {
-	font-family: inherit;
-	font-size: 13px;
-	line-height: 18px;
-	background-color: #ffffff;
-	text-transform: inherit;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #ffffff;
+  text-transform: inherit;
 }
 
 .catalog-item {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .catalog-content-container {
-	font-family: 'PT Sans', Arial, sans-serif;
-	font-weight: bold;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
 }
 
 .catalog-content-container h3 {
-	font-size: 18px;
-	line-height: 20px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .catalog-item-price {
-	font-size: 17px;
-	line-height: 18px;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .old-price {
-	color: #999999;
-	text-decoration: line-through;
+  color: #999999;
+  text-decoration: line-through;
 }
 
 .new-price {
-	color: #ffffff;
-	background-color: #ee3341;
+  color: #ffffff;
+  background-color: #ee3341;
 }
 
 .catalog-item-buttons button {
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .catalog-item-order {
-	color: #ffffff;
-	background-color: #63a63e;
+  color: #ffffff;
+  background-color: #63a63e;
 }
 
 .catalog-item-order:focus,
 .catalog-item-order:hover {
-	background-color: #5fbb2d;
+  background-color: #5fbb2d;
 }
 
 .catalog-item-order:active {
-	background-color: #518534;
+  background-color: #518534;
 }
 
 .catalog-item-bookmark {
-	color: #32425c;
-	background-color: #ffffff;
+  color: #32425c;
+  background-color: #ffffff;
 }
 
 .catalog-item-bookmark:focus,
 .catalog-item-bookmark:hover {
-	/* Стили рамки при наведении */
+  /* Стили рамки при наведении */
 }
 
 .catalog-item-bookmark:active {
-	color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 /* Футер */
 
 .footer-main {
-	color: #f3f7f9;
-	background-color: #32425c;
+  color: #f3f7f9;
+  background-color: #32425c;
 }
 
 .footer-menu-main,
 .footer-menu-extra {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .footer-menu-extra {
-	color: #ffd180;
+  color: #ffd180;
 }
 
 .footer-menu-main a:focus,
 .footer-menu-main a:hover,
 .footer-menu-extra a:focus,
 .footer-menu-extra a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-menu-main a:active {
-	color: rgba(241, 245, 247, 0.5);
+  color: rgba(241, 245, 247, 0.5);
 }
 
 .footer-menu-extra a:active {
-	color: rgba(255, 209, 128, 0.5);
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .footer-bottom {
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;
-	background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
 }
 
 .footer-feedback a,
 .footer-developer a {
-	color: #ffd180;
+  color: #ffd180;
 }
 
 .footer-feedback a:focus,
 .footer-feedback a:hover,
 .footer-developer a:focus,
 .footer-developer a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-feedback a:active,
 .footer-developer a:active {
-	color: #ee3643;
+  color: #ee3643;
 }
 
 .footer-social ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .footer-bottom .social-button {
-	color: #ffffff;
-	background-color: #212a3a;
+  color: #ffffff;
+  background-color: #212a3a;
 }
 
 .footer-bottom .social-button:focus,
 .footer-bottom .social-button:hover,
 .footer-bottom .social-button:active {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
