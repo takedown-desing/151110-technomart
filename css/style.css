@@ -31,10 +31,6 @@ a {
 
 }
 
-/* Временные стили */
-
-
-
 /* Шапка */
 
 .header-main {
@@ -42,6 +38,10 @@ a {
   flex-direction: column;
   margin-bottom: 60px;
   background-color: #f3f7f9;
+}
+
+.inner .header-main {
+  margin-bottom: 20px;
 }
 
 .header-top {
@@ -68,7 +68,6 @@ a {
 
 .header-bottom {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -123,7 +122,7 @@ a {
 
 .header-description {
   width: 200px;
-  margin-left: 53px;
+  margin: 0 70px 0 53px;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -155,7 +154,15 @@ a {
 }
 
 .user-navigation {
+  margin-left: auto;
+}
+
+.user-navigation.unauthorized {
   width: 230px;
+}
+
+.user-navigation.authorized {
+  width: 300px;
 }
 
 .user-navigation ul {
@@ -270,6 +277,8 @@ a {
 /* Контент внутренних страниц */
 
 .breadcrumbs {
+  margin: 0 0 0 25px;
+  padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -278,6 +287,9 @@ a {
 }
 
 .container h1 {
+  width: auto;
+  margin: 0 0 20px 0;
+  padding: 30px;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -286,8 +298,15 @@ a {
 }
 
 .filters {
+  width: 220px;
   font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.filters fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .filters legend {
@@ -309,8 +328,30 @@ a {
   text-transform: inherit;
 }
 
+.catalog {
+  width: 700px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-item {
+  width: 220px;
+  margin: 0 20px 20px 0;
   list-style-type: none;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-content-container {
