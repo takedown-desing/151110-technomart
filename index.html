@@ -22,9 +22,9 @@
             <input type="search" name="search" placeholder="Поиск:" id="search-field" class="search-input">
           </form>
           <div class="header-quicklinks">
-            <a class="header-bookmarks" href="#">Закладки: 0</a>
-            <a class="header-cart" href="#">Корзина: 0</a>
-            <a class="header-order" href="#">Оформить заказ</a>
+            <a class="header-quicklink header-bookmarks" href="#">Закладки: 0</a>
+            <a class="header-quicklink header-cart" href="#">Корзина: 0</a>
+            <a class="header-quicklink header-order" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
       </div>
       <nav class="main-menu container">
         <ul>
-          <li>Главная</li>
+          <li><a href="/">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Новости</a></li>
@@ -79,7 +79,7 @@
         <p>Вы можете забрать товар сами, <br>
           заехав в наш офис:
         </p>
-        <p class="contacts-map"><a href="https://goo.gl/maps/KQanHvccPNP2" target="_blank"><img src="img/main-map.jpg" alt="Карта проезда" width="300" height="158"></a></p>
+        <div class="contacts-map"><a href="https://goo.gl/maps/KQanHvccPNP2" target="_blank"><img src="img/main-map.jpg" alt="Карта проезда" width="300" height="158"></a></div>
         <button class="button-contacts">Заблудились? Напишите нам!</button>
       </section>
     </div>
@@ -114,9 +114,24 @@
           </p>
           <div class="footer-social">
             <ul>
-              <li><a class="social-button" href="#">Вконтакте</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <img src="img/icon-vk.svg" height="15" width="26">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <img src="img/icon-fb.svg" height="22" width="12">
+                </a>
+              </li>
+              <li>
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <img src="img/icon-insta.svg" height="21" width="21">
+                </a>
+              </li>
             </ul>
           </div>
           <div class="footer-dev-contacts">
