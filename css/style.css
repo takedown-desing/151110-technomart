@@ -55,7 +55,7 @@ a {
 }
 
 .header-top {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -69,7 +69,7 @@ a {
 }
 
 .header-logo {
-  padding: 13px 55px 7px 55px;
+  padding: 13px 54px 7px 55px;
   background-color: #ee3643;
 }
 
@@ -90,7 +90,8 @@ a {
 
 .header-quicklink {
   display: inline-block;
-  padding: 12px 20px;
+  min-width: 150px;
+  padding: 12px 20px 13px 20px;
   font-size: 17px;
 }
 
@@ -100,20 +101,26 @@ a {
 }
 
 .header-main .search-input {
+  border: none;
   color: #ffffff;
   background-color: #293449;
 }
 
+.search-input::placeholder {
+  color: #ffffff;
+}
+
 .search-form {
   position: relative;
+  width: 270px;
   padding-left: 50px;
 }
 
 .search-form::before {
   content: '';
   position: absolute;
-  top: 5px;
-  left: 18px;
+  top: 0;
+  left: 17px;
   width: 17px;
   height: 17px;
   background-image: url(../img/icon-search.svg);
@@ -129,14 +136,13 @@ a {
 .header-cart {
   position: relative;
   padding-left: 50px;
-  padding-right: 30px;
 }
 
 .header-cart::before {
   content: '';
   position: absolute;
-  top: 13px;
-  left: 18px;
+  top: 11px;
+  left: 19px;
   width: 15px;
   height: 15px;
   background-image: url(../img/icon-cart.svg);
@@ -161,15 +167,15 @@ a {
 
 .header-bookmarks {
   position: relative;
-  padding-left: 50px;
-  padding-right: 30px;
+  padding-left: 43px;
+  padding-right: 28px;
 }
 
 .header-bookmarks::before {
   content: '';
   position: absolute;
   top: 13px;
-  left: 18px;
+  left: 17px;
   width: 15px;
   height: 15px;
   background-image: url(../img/icon-bookmark.svg);
@@ -219,7 +225,7 @@ a {
 
 .header-description {
   width: 200px;
-  margin: 0 70px 0 53px;
+  margin: 0 67px 0 53px;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -234,8 +240,8 @@ a {
 .header-phone {
   display: block;
   position: relative;
-  padding: 11px 50px 11px 72px;
-  margin-bottom: 10px;
+  padding: 8px 50px 9px 72px;
+  margin-bottom: 5px;
   border: 2px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
@@ -245,8 +251,8 @@ a {
 .header-phone::before {
   content: '';
   position: absolute;
-  top: 13px;
-  left: 15px;
+  top: 10px;
+  left: 13px;
   width: 19px;
   height: 19px;
   background-image: url(../img/icon-phone.svg);
@@ -260,6 +266,10 @@ a {
   color: #32425c;
 }
 
+.user-buttons {
+  font-size: 0;
+}
+
 .user-buttons li {
   display: inline-block;
   vertical-align: top;
@@ -267,7 +277,7 @@ a {
 
 .user-button {
   display: block;
-  padding: 11px 25px;
+  padding: 11px 24px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -283,13 +293,14 @@ a {
 .login-button::before {
   content: '';
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 12px;
+  left: 15px;
   width: 20px;
   height: 17px;
   background-image: url(../img/icon-login.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.3;
 }
 
 .user-navigation {
@@ -371,7 +382,7 @@ a {
 
 .main-menu a {
   display: block;
-  padding: 20px 30px;
+  padding: 18px 30px;
 }
 
 .main-menu a:focus,
@@ -383,6 +394,8 @@ a {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
+
+/* Контент главной страницы */
 
 .index-columns {
   display: flex;
@@ -399,6 +412,8 @@ a {
 
 .main-about h2,
 .main-contacts h2 {
+  margin: 0;
+  margin-bottom: 26px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -407,21 +422,14 @@ a {
 .main-about p,
 .main-contacts p {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
 }
 
-/* Контент главной страницы */
-
-.container h2 {
-  margin: 0;
-  margin-bottom: 35px;
-}
-
 .companies-list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 0;
 }
 
@@ -436,7 +444,7 @@ a {
 .companies-list li::before {
   content: '';
   position: absolute;
-  top: 10px;
+  top: 7px;
   left: 0;
   width: 25px;
   height: 2px;
@@ -446,7 +454,7 @@ a {
 .button-more,
 .button-contacts {
   display: inline-block;
-  padding: 12px 40px;
+  padding: 10px 40px;
   border: 0;
   border-radius: 3px;
   font-size: 14px;
@@ -469,8 +477,12 @@ a {
   background-color: #ba2732;
 }
 
+.button-contacts {
+  width: 100%;
+}
+
 .contacts-map {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 /* Контент внутренних страниц */
