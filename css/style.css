@@ -75,10 +75,13 @@ a {
 
 .header-quicklinks {
   margin-left: auto;
+  font-size: 0;
 }
 
-.header-quicklinks a {
+.header-quicklink {
+  display: inline-block;
   padding: 12px 20px;
+  font-size: 17px;
 }
 
 .header-bottom {
@@ -113,7 +116,7 @@ a {
   background-color: #63a63e;
 }
 
-a.header-cart {
+.header-cart {
   position: relative;
   padding-left: 50px;
   padding-right: 30px;
@@ -146,7 +149,7 @@ a.header-cart {
   background-color: #ba2732;
 }
 
-a.header-bookmarks {
+.header-bookmarks {
   position: relative;
   padding-left: 50px;
   padding-right: 30px;
