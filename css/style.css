@@ -37,10 +37,6 @@ img {
   margin: -1px;
 }
 
-.modal {
-  display: none;
-}
-
 .container {
   width: 940px;
   margin: 0 auto;
@@ -1070,4 +1066,122 @@ input[type="radio"]:checked+label::before {
 .social-button:hover,
 .social-button:active {
   background-color: #ee3643;
+}
+
+/* Модальные окна */
+
+.modal {
+  display: none;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/icon-close.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.modal-map {
+  top: 165px;
+  left: 50%;
+  margin-left: -470px;
+}
+
+.modal-map-img {
+  display: block;
+}
+
+.modal-feedback {
+  display: block;
+  top: 165px;
+  left: 50%;
+  margin-left: -310px;
+  width: 620px;
+  border-top: 7px solid #ee3643;
+}
+
+.modal-container {
+  padding: 48px 80px 37px 80px;
+}
+
+.modal-field {
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.name-field {
+  margin-right: 15px;
+}
+
+.modal-field input,
+.modal-field textarea {
+  display: block;
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+  padding: 10px 15px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.modal-field input {
+  width: 220px;
+  margin-top: 13px;
+}
+
+.modal-field textarea {
+  width: 460px;
+  margin-top: 18px;
+}
+
+.modal-field input:focus,
+.modal-field input:hover,
+.modal-field textarea:focus,
+.modal-field textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.modal-field input:active,
+.modal-field textarea:active {
+  border-color: #ee3643;
+}
+
+.modal-button-container {
+  width: 100%;
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+}
+
+.modal-feedback .button-submit {
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  padding: 14px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal-feedback .button-submit:focus,
+.modal-feedback .button-submit:hover {
+  background-color: #ca2c37;
+}
+
+.modal-feedback .button-submit:active {
+  background-color: #ba2732;
 }
