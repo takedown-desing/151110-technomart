@@ -1185,3 +1185,57 @@ input[type="radio"]:checked+label::before {
 .modal-feedback .button-submit:active {
   background-color: #ba2732;
 }
+
+.modal-cart {
+  display: block;
+  top: 410px;
+  left: 50%;
+  margin-left: -310px;
+  width: 620px;
+}
+
+.modal-cart h2 {
+  position: relative;
+  margin: 0;
+  padding: 20px 0 20px 95px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.modal-cart h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/icon-order.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.button-order,
+.button-dismiss {
+  width: 220px;
+  border: none;
+  border-radius: 2px;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-order {
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.button-dismiss {
+  color: #000000;
+  background-color: #ffffff;
+}
