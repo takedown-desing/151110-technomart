@@ -620,11 +620,27 @@ img {
   text-transform: uppercase;
 }
 
+.filter-heading {
+  margin: 0;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #f7f3ec;
+}
+
 .filters fieldset {
   margin: 0;
   margin-top: 20px;
   padding: 0;
   border: 0;
+}
+
+.filters fieldset:first-child {
+  margin-top: 11px;
+  padding-bottom: 4px;
 }
 
 .filters legend {
@@ -722,6 +738,160 @@ input[type="radio"]:checked+label::before {
   border-color: #ee3643;
 }
 
+/* Ползунок «Цена» */
+
+.filter-price legend {
+  padding-top: 0;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px;
+  background-color: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  box-sizing: content-box;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-controls input {
+  display: inline-block;
+  width: 95px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #f7f3ec;
+}
+
+/* Сортировка */
+
+.sort {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  background-color: #f7f3ec;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-heading {
+  margin: 0;
+  margin-right: 137px;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.sort-option {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-option:focus,
+.sort-option:hover {
+  color: #000000;
+  border-bottom-style: solid;
+}
+
+.sort-option:active,
+.sort-option.active {
+  color: #ee3643;
+  border: none;
+}
+
+.sort-ascending,
+.sort-descending,
+.sort-ascending:focus,
+.sort-descending:focus,
+.sort-ascending:hover,
+.sort-descending:hover {
+  border: none;
+}
+
+.sort-ascending path,
+.sort-descending path {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.sort-ascending:focus path,
+.sort-descending:focus path,
+.sort-ascending:hover path,
+.sort-descending:hover path {
+  fill: #000000;
+}
+
+.sort-ascending:active path,
+.sort-descending:active path,
+.sort-ascending.active path,
+.sort-descending.active path {
+  fill: #ee3643;
+}
+
+.sort-price {
+  margin-right: 67px;
+}
+
+.sort-type {
+  margin-right: 62px;
+}
+
+.sort-function {
+  margin-right: 43px;
+}
+
+.sort-ascending {
+  margin-right: 18px;
+}
+
 /* Каталог товаров */
 
 .catalog {
@@ -737,6 +907,7 @@ input[type="radio"]:checked+label::before {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
 }
 
@@ -888,12 +1059,68 @@ input[type="radio"]:checked+label::before {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.catalog-description {
+  width: 100%;
+  background-color: #f4f7f9;
+  padding-top: 65px; 
+  padding-bottom: 69px;
+}
+
+.catalog-description p {
+  margin: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.catalog-description h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  margin-bottom: 70px; 
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pagination-item {
+  margin-right: 8px;
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.pagination-next {
+  padding: 10px 30px;
+}
+
+.pagination-current {
+  border: none;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.pagination-item:focus,
+.pagination-item:hover {
+  border-color: #bdc6ca;
+}
+
+.pagination-item:active {
+  border-color: #ee3643;
+}
+
 /* Футер */
 
 .footer-main {
   display: flex;
   flex-direction: column;
-  margin-top: 86px;
+  /*margin-top: 86px;*/
   color: #f3f7f9;
   background-color: #32425c;
 }
