@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -88,9 +88,24 @@
           <a href="#">Для стройки</a>
         </div>
         <div class="promo-slider">
-          <h3>Дрели</h3>
-          <p>Соседям на радость!</p>
-          <a href="#" class="button slider-button">Открыть каталог</a>
+          <button class="button-prev" aria-label="Предыдущий слайд"></button>
+          <button class="button-next" aria-label="Следующий слайд"></button>
+          <div class="slider-controls">
+            <button class="active" aria-label="Первый слайд"></button>
+            <button aria-label="Второй слайд"></button>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a href="catalog.html" class="button slider-button">Открыть каталог</a>
+            </li>
+            <li class="slider-item">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a href="catalog.html" class="button slider-button">Открыть каталог</a>
+            </li>
+          </ul>
         </div>
         <div class="promo-right-column">
           <div class="promo-block promo-sale">
@@ -106,7 +121,7 @@
       <section class="main-products">
         <div class="main-heading">
           <h2>Популярные товары:</h2>
-          <a href="#" class="button">Все популярные товары</a>
+          <a href="catalog.html" class="button">Все популярные товары</a>
         </div>
         <ul class="main-products-list">
           <li class="catalog-item">
@@ -256,7 +271,7 @@
         <ul class="footer-menu-main">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
